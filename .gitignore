@@ -24,6 +24,9 @@ recovered_dashboard*.json
 temp_inner_script.js
 .wrangler/
 
+# Ignore local Pages deployment folder
+public/
+
 # OS files
 .DS_Store
 Thumbs.db
