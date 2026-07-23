@@ -1,0 +1,29 @@
+# Ignore Cloudflare Worker subdirectories
+line-bot-cloudflare/
+line-bot-cloudflare-v2/
+
+# Ignore setup guides and scripts
+linebot_setup_guide.html
+read_scratches.js
+
+# Sensitive credential records
+linebot_credentials_record.md
+
+# Log files
+*.log
+tail.log
+
+# ZIP files
+*.zip
+
+# Backup directories
+backup/
+
+# Recovered dashboards & configs
+recovered_dashboard*.json
+temp_inner_script.js
+.wrangler/
+
+# OS files
+.DS_Store
+Thumbs.db
