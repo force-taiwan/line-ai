@@ -3,10 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LINE Bot + AI KM | 產品說明與操作展示</title>
-  <meta name="description" content="LINE Bot + AI KM 產品介紹與說明頁面：用自然語言與指令選單輕鬆操作 LINE，結合企業知識庫與 AI 智慧助理。網址：line-bot-km.formosa-ai.com">
-  <meta name="keywords" content="LINE Bot, AI KM, 自然語言操作, 指令選單, 000選單, 661搜尋, 企業知識庫, line-bot-km.formosa-ai.com">
+  <title>LINE Bot + AI KM | 產品說明與操作展示 (Falo x Force Cheng ver1.01)</title>
+  <meta name="description" content="LINE Bot + AI KM 產品介紹與說明頁面：用自然語言與指令選單輕鬆操作 LINE，結合企業知識庫與 AI 智慧助理。作者：Falo x Force Cheng，版本：ver1.01 (2026/07/23)">
+  <meta name="keywords" content="LINE Bot, AI KM, 自然語言操作, 指令選單, 000選單, 661搜尋, 企業知識庫, line-bot-km.formosa-ai.com, Force Cheng">
+  <meta name="author" content="Falo x Force Cheng">
+  <meta name="version" content="ver1.01 (2026/07/23)">
+  <meta name="robots" content="index, follow">
   
+  <!-- Geo-tags for Search Engines -->
+  <meta name="geo.region" content="TW">
+  <meta name="geo.placename" content="Taiwan">
+  
+  <!-- AI Agent Optimization Metadata (Geo/AI SEO) -->
+  <meta name="ai-agent-friendly" content="true">
+  <meta name="ai-agent-description" content="This page details the official specifications, instruction manual, and capabilities of FALO AI KM Line Bot developed by Force Cheng. It lists all commands (000, 661, 662, 663, 666, 991, 992, 999, 111, 221, 222, 444, 555, 888, %%%) and demonstrates multimodal AI capabilities including Whisper voice translation, vision OCR, and structured HTML report generation.">
+  
+  <!-- Structured Data JSON-LD for AI Crawlers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FALO AI KM Line Bot",
+    "softwareVersion": "1.01",
+    "releaseDate": "2026-07-23",
+    "author": {
+      "@type": "Person",
+      "name": "Force Cheng"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Falo x Force Cheng"
+    },
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "LINE Platform, Web-based",
+    "description": "Enterprise AI Knowledge Management bot running on Cloudflare, supporting Whisper, Vision OCR, Caching, and HTML reporting."
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -197,9 +230,10 @@
     .sidebar-footer {
       padding: 16px 20px;
       border-top: 1px solid var(--border-color);
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       color: var(--text-light);
       text-align: center;
+      line-height: 1.4;
     }
 
     /* Right Main Content */
@@ -385,6 +419,38 @@
       margin-bottom: 24px;
     }
 
+    /* Collapsible Styles */
+    .screenshot-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 12px;
+      transition: all 0.2s ease;
+    }
+
+    .screenshot-toggle-btn:hover {
+      border-color: var(--line-green);
+      color: var(--line-green-hover);
+      background: var(--line-green-light);
+    }
+
+    .screenshot-collapsible {
+      display: none;
+      background: var(--bg-card-sub);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      margin-top: 12px;
+    }
+
     .screenshot-img-wrapper {
       background: var(--bg-card-sub);
       border: 1px solid var(--border-color);
@@ -529,7 +595,7 @@
       </div>
     </div>
 
-    <!-- Menu Chapters -->
+    <!-- Menu Navigation -->
     <nav class="sidebar-menu">
       <div class="menu-group-label">主要章節</div>
       
@@ -560,7 +626,8 @@
     </nav>
 
     <div class="sidebar-footer">
-      © 2026 FALO AI KM. All rights reserved.
+      <div>Falo x Force Cheng</div>
+      <div>2026/7/23 ver1.01</div>
     </div>
   </aside>
 
@@ -641,7 +708,7 @@
           在 LINE 聊天室中輸入 <code>000</code>，Bot 將自動回覆下方這份完整的對話指令目錄選單。以下為每個編號代碼的詳細作用與功能說明：
         </p>
 
-        <!-- Screenshot Image 1: 000 Menu -->
+        <!-- Screenshot Image 1: 000 Menu (Always Visible) -->
         <div class="screenshot-img-wrapper">
           <img src="./assets/line_menu_screenshot.png" alt="Falo AI LineBot V2 指令選單截圖" class="screenshot-img">
           <div class="screenshot-caption">📷 截圖 1：實體 LINE 聊天室選單展現 (輸入 000 觸發)</div>
@@ -659,7 +726,7 @@
             </div>
 
             <div class="command-list">
-              <!-- Item 661 with attached screenshot -->
+              <!-- Item 661 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">661 [關鍵字]</span>
@@ -668,14 +735,17 @@
                 <div class="cmd-desc">
                   <b>作用：</b>根據輸入的關鍵字，直接翻查本 LINE 聊天室中最新的 10 筆歷史發言與討論紀錄，精確追溯重要發言與脈絡。
                 </div>
-
-                <!-- Screenshot Image 2: 661 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_661_screenshot.png" alt="661 關鍵字搜尋實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 2：實體 LINE 聊天室對話截圖：輸入「661 Force」快速調閱最新 10 筆紀錄內容</div>
+                
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_661_screenshot.png" alt="661 關鍵字搜尋實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 2：實體 LINE 聊天室對話截圖：輸入「661 Force」快速調閱最新 10 筆紀錄內容</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 662 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">662 [問題]</span>
@@ -685,13 +755,16 @@
                   <b>作用：</b>僅調閱企業內部上傳的 SOP 與文件知識庫進行回應，回覆限定在 300 字內精煉精華。100% 封閉不連外網，保障資安機密並防範 AI 幻覺。
                 </div>
 
-                <!-- Screenshot Image 3: 662 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_662_screenshot.png" alt="662 內部智庫提問實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 3：實體 LINE 聊天室對話截圖：輸入「662 退換貨作業 SOP 流程與鑑賞期天數？」快速檢索內部智庫</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_662_screenshot.png" alt="662 內部智庫提問實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 3：實體 LINE 聊天室對話截圖：輸入「662 退換貨作業 SOP 流程與鑑賞期天數？」快速檢索內部智庫</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 663 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">663 [問題]</span>
@@ -701,13 +774,16 @@
                   <b>作用：</b>優先檢索內部 AI KM 智庫；若內部資料不足時，自動啟用 Google 實時聯網搜尋補充，整合產出 300 字內的最佳答案。
                 </div>
 
-                <!-- Screenshot Image 4: 663 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_663_screenshot.png" alt="663 聯網智庫提問實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 4：實體 LINE 聊天室對話截圖：輸入「663 公司資訊」觸發聯網整合回覆</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_663_screenshot.png" alt="663 聯網智庫提問實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 4：實體 LINE 聊天室對話截圖：輸入「663 公司資訊」觸發聯網整合回覆</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 666 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">666 [主題]</span>
@@ -719,10 +795,12 @@
                   <a href="https://line-ai.formosa-ai.com/report/rpt_1784810427218_k8hh" target="_blank" class="demo-report-link" style="display: inline-block; margin-top: 8px; color: var(--line-green); font-weight: 700; text-decoration: underline;">🔗 點此開啟線上真實生成之「HTML 尊榮智庫報表」範例</a>
                 </div>
 
-                <!-- Screenshot Image 5: 666 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_666_screenshot.png" alt="666 HTML報表生成實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 5：實體 LINE 聊天室對話截圖：輸入「666 公司重點服務項目」自動產生網頁版報表連結</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_666_screenshot.png" alt="666 HTML報表生成實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 5：實體 LINE 聊天室對話截圖：輸入「666 公司重點服務項目」自動產生網頁版報表連結</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -737,6 +815,7 @@
             </div>
 
             <div class="command-list">
+              <!-- Item 991 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">991 [主題]</span>
@@ -746,13 +825,16 @@
                   <b>作用：</b>極速調研網路最新訊息，生成 150~200 字極簡精華重點，適合在手機端迅速掌握快訊。
                 </div>
 
-                <!-- Screenshot Image 6: 991 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_991_screenshot.png" alt="991 極速微簡報實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 6：實體 LINE 聊天室對話截圖：輸入「991 gemini 3.6」快速生成極速微簡報</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_991_screenshot.png" alt="991 極速微簡報實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 6：實體 LINE 聊天室對話截圖：輸入「991 gemini 3.6」快速生成極速微簡報</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 992 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">992 [主題]</span>
@@ -762,13 +844,16 @@
                   <b>作用：</b>即時向全球外網進行 Google 搜尋與新聞綜整，輸出 400~500 字結構清晰的中篇重點摘要簡報。
                 </div>
 
-                <!-- Screenshot Image 7: 992 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_992_screenshot.png" alt="992 預設標準簡報實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 7：實體 LINE 聊天室對話截圖：輸入「992 gemini 3.6」生成預設標準簡報</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_992_screenshot.png" alt="992 預設標準簡報實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 7：實體 LINE 聊天室對話截圖：輸入「992 gemini 3.6」生成預設標準簡報</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 999 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">999 [主題]</span>
@@ -780,10 +865,12 @@
                   <a href="https://line-ai.formosa-ai.com/report/rpt_999_1784810717260_aihk" target="_blank" class="demo-report-link" style="display: inline-block; margin-top: 8px; color: var(--line-green); font-weight: 700; text-decoration: underline;">🔗 點此開啟線上真實生成之「HTML 深度研報網頁」範例</a>
                 </div>
 
-                <!-- Screenshot Image 8: 999 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_999_screenshot.png" alt="999 深度智庫研報實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 8：實體 LINE 聊天室對話截圖: 輸入「999 gemini 3.6」生成深度智庫研報與網頁連結</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_999_screenshot.png" alt="999 深度智庫研報實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 8：實體 LINE 聊天室對話截圖: 輸入「999 gemini 3.6」生成深度智庫研報與網頁連結</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -798,6 +885,7 @@
             </div>
 
             <div class="command-list">
+              <!-- Item 111 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">111 [問題]</span>
@@ -807,13 +895,16 @@
                   <b>作用：</b>在靜音或非主動回應模式下，強制單次喚醒大腦針對特定問題進行解答。
                 </div>
 
-                <!-- Screenshot Image 9: 111 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_111_screenshot.png" alt="111 單次喚醒提問實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 9：實體 LINE 聊天室對話截圖：輸入「111 今天高雄天氣」強制單次喚醒回應</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_111_screenshot.png" alt="111 單次喚醒提問實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 9：實體 LINE 聊天室對話截圖：輸入「111 今天高雄天氣」強制單次喚醒回應</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 221/222 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">221 / 222</span>
@@ -823,29 +914,35 @@
                   <b>作用：</b><code>221</code> 開啟全 AI 模式（Bot 對聊天室訊息智慧回應）；<code>222</code> 關閉全 AI 模式（恢復防打擾或靜音編目狀態）。
                 </div>
 
-                <!-- Screenshot Image 10: 221/222 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_22x_screenshot.png" alt="221/222 模式切換實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 10：實體 LINE 聊天室對話截圖：輸入「221」與「222」進行主動回應與安靜模式切換</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_22x_screenshot.png" alt="221/222 模式切換實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 10：實體 LINE 聊天室對話截圖：輸入「221」與「222」進行主動回應與安靜模式切換</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 444 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">444 [文字]</span>
                   <span class="cmd-name">靜音上記錄 (AI 不回應)</span>
                 </div>
                 <div class="cmd-desc">
-                  <b>作用：</b>默默將對話文字、圖片或檔案備份至雲端 D1 / R2，Bot 於 LINE 中完全不發送任何訊息，不打擾成員討論。
+                  <b>作用：</b>默默將對話文字、圖片或檔案備份至雲端 D1 / R2，Bot 於 LINE 中完全不發送 any 訊息，不打擾成員討論。
                 </div>
 
-                <!-- Screenshot Image 11: 444 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_444_screenshot.png" alt="444 靜音上記錄實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 11：實體 LINE 聊天室對話截圖：輸入「444 1 + 2 + .... + 100 = ?」時 Bot 保持靜音，但已在背景自動存檔備份</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_444_screenshot.png" alt="444 靜音上記錄實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 11：實體 LINE 聊天室對話截圖：輸入「444 1 + 2 + .... + 100 = ?」時 Bot 保持靜音，但已在背景自動存檔備份</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 555 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">555 [知識]</span>
@@ -855,13 +952,16 @@
                   <b>作用：</b>管理者可在聊天室輸入 <code>555 [問題:答案]</code>，即時將新問答寫入動態 FAQ 資料庫，大腦秒級學會新業務。
                 </div>
 
-                <!-- Screenshot Image 12: 555 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_555_screenshot.png" alt="555 即時教導實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 12：實體 LINE 聊天室對話截圖：輸入「555 FALO是縮寫，全文是 Formosa AI Life Outlook」立即改變 AI 的大腦知識認知</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_555_screenshot.png" alt="555 即時教導實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 12：實體 LINE 聊天室對話截圖：輸入「555 FALO是縮寫，全文是 Formosa AI Life Outlook」立即改變 AI 的大腦知識認知</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 888 with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">888 [編號]</span>
@@ -871,19 +971,20 @@
                   <b>作用：</b>將耗時的圖片 OCR、語音 Whisper 轉錄或巨型研報任務丟入異步 Queue 佇列中執行，避免 LINE 觸發 5 秒 HTTP 超時。
                 </div>
 
-                <!-- Screenshot Image 13: 888 Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px;">
-                  <img src="./assets/line_888_screenshot.png" alt="888 全能任務佇列池實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 13：實體 LINE 聊天室對話截圖：輸入「888」呼叫異步處理佇列池，查看圖片/研報等高耗時背景任務的即時進度</div>
-                </div>
-
-                <!-- Screenshot Image 14: 888 1 Result Retrieval Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_888_result_screenshot.png" alt="888 任務領取實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 14：實體 LINE 聊天室對話截圖：輸入「888 1」領取該筆任務成果（OCR 圖片內容大意與 RWD 專屬網頁網址）</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 16px;">
+                    <img src="./assets/line_888_screenshot.png" alt="888 全能任務佇列池實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 13：實體 LINE 聊天室對話截圖：輸入「888」呼叫異步處理佇列池，查看圖片/研報等高耗時背景任務的即時進度</div>
+                  </div>
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_888_result_screenshot.png" alt="888 任務領取實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 14：實體 LINE 聊天室對話截圖：輸入「888 1」領取該筆任務成果（OCR 圖片內容大意與 RWD 專屬網頁網址）</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item %%% with collapsible screenshot -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">%%% [編號]</span>
@@ -893,13 +994,16 @@
                   <b>作用：</b>即時查看或切換底層 LLM 大腦模型（如 Gemini 3.5 Flash-Lite 或 Gemini 3.1 Flash-Lite）。
                 </div>
 
-                <!-- Screenshot Image 16: %%% Command Live Result -->
-                <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                  <img src="./assets/line_model_swap_screenshot.png" alt="%%% 查詢與切換大腦模型實體範例截圖" class="screenshot-img">
-                  <div class="screenshot-caption">📷 截圖 15：實體 LINE 聊天室對話截圖：輸入「%%%」查看可用模型清單，並輸入「%%% 3」進行無縫切換</div>
+                <button class="screenshot-toggle-btn" onclick="toggleScreenshot(this)">📷 展開實測對話截圖 (▼)</button>
+                <div class="screenshot-collapsible">
+                  <div class="screenshot-img-wrapper" style="margin-bottom: 0;">
+                    <img src="./assets/line_model_swap_screenshot.png" alt="%%% 查詢與切換大腦模型實體範例截圖" class="screenshot-img">
+                    <div class="screenshot-caption">📷 截圖 15：實體 LINE 聊天室對話截圖：輸入「%%%」查看可用模型清單，並輸入「%%% 3」進行無縫切換</div>
+                  </div>
                 </div>
               </div>
 
+              <!-- Item 000 (No toggle, always visible) -->
               <div class="command-item">
                 <div class="cmd-top">
                   <span class="cmd-code">000</span>
@@ -963,11 +1067,11 @@
           <div class="group-header">
             <span style="font-size: 1.3rem;">👁️</span>
             <div class="group-title">【視覺辨識：高精度 OCR 與大意提煉】</div>
-            <div class="group-subtitle">傳送圖片自動進行文字萃取與摘要分析</div>
+            <div class="group-subtitle">圖片文字萃取與 RWD 專屬網頁檢視</div>
           </div>
           <div style="padding: 24px; font-size: 0.95rem; color: var(--text-main); line-height: 1.6; border-bottom: 1px solid var(--border-color);">
-            在 LINE 聊天室中，您可以直接上傳單據、合約、發票或任何含有文字的圖片。
-            Bot 會自動將圖片送入異步佇列，辨識完成後產出文字摘要，並提供專屬網頁連結供大圖瀏覽與一鍵複製。
+            使用者在 LINE 聊天室上傳圖片後，系統會自動在背景提取其中的所有文字內容。
+            除了以純文字答覆，還會自動生成一組專屬的 RWD 線上閱讀器網址，提供大圖比對、大意提煉與 OCR 辨識全文一鍵複製。
           </div>
           
           <!-- Screenshot Image: RWD Image Reader -->
@@ -981,125 +1085,46 @@
         <div class="command-group-card" style="border-left: 4px solid var(--line-green);">
           <div class="group-header">
             <span style="font-size: 1.3rem;">🎙️</span>
-            <div class="group-title">【語音翻譯：音訊轉錄與線上收聽】</div>
-            <div class="group-subtitle">語音訊息自動轉為繁體中文文字</div>
+            <div class="group-title">【語音翻譯：音訊轉錄與線上播放】</div>
+            <div class="group-subtitle">語音訊息自動轉為繁體中文文字與線上播放</div>
           </div>
           <div style="padding: 24px; font-size: 0.95rem; color: var(--text-main); line-height: 1.6; border-bottom: 1px solid var(--border-color);">
-            傳送 LINE 語音訊息時，AI 會自動透過 Whisper 語音辨識模型將音訊轉錄為文字，並生成專屬的網頁連結，方便在網頁端隨時重聽音訊與複製全文。
+            當收到語音訊息時，系統會自動啟用 Whisper 模型完成語音轉文字轉錄。
+            轉錄完成後，使用者可直接點選專屬網址開啟 RWD 語音閱讀器，線上重聽語音（內建 HTML5 音訊播放器與進度條）與直接複製文字內容。
           </div>
           
-          <!-- Screenshot Image: Voice Transcribe -->
+          <!-- Screenshot Image: Voice Transcribe RWD -->
           <div class="screenshot-img-wrapper" style="margin: 24px; margin-bottom: 16px;">
-            <img src="./assets/line_voice_transcribe_screenshot.png" alt="語音轉錄實體範例截圖" class="screenshot-img">
-            <div class="screenshot-caption">📷 LINE 聊天室中語音訊息轉錄為文字及產出線上收聽網址的實體對話畫面</div>
+            <img src="./assets/line_audio_reader_screenshot.png" alt="語音訊息閱讀器網頁版實體截圖" class="screenshot-img">
+            <div class="screenshot-caption">📷 點擊對話連結開啟的「FALO 語音訊息閱讀器」網頁版成果，內建語音播放器與轉錄文字複製</div>
           </div>
         </div>
 
-        <!-- Group 3: 智慧型報表與聯網情報 (666 & 99x) -->
+        <!-- Group 3: 智慧型報表成果 -->
         <div class="command-group-card" style="border-left: 4px solid var(--line-green);">
           <div class="group-header">
             <span style="font-size: 1.3rem;">📊</span>
-            <div class="group-title">【智慧型報表與聯網研報：666 & 99x】</div>
+            <div class="group-title">【智慧型報表成果展示】</div>
             <div class="group-subtitle">自動生成精美網頁版互動式專用報表</div>
           </div>
           <div class="command-list">
             
             <div class="command-item">
               <div class="cmd-top">
-                <span class="cmd-code">666 [主題]</span>
-                <span class="cmd-name">尊榮 HTML 智慧型報表（好閱讀版本）</span>
+                <span class="cmd-name">尊榮 HTML 智慧型報表網頁版成果</span>
               </div>
               <div class="cmd-desc">
-                <b>作用：</b>針對指定主題進行全方位數據分析，並自動生成視覺美觀、排版專業的 HTML 互動式網頁報表連結，方便於電腦或手機大螢幕閱讀。
+                根據智庫與即時外網搜尋，為企業用戶量身生成視覺美觀、功能完整（支援一鍵複製全文、列印/匯出 PDF）、含目錄導航的專屬線上研報網頁。
                 <br>
                 <a href="https://line-ai.formosa-ai.com/report/rpt_1784810427218_k8hh" target="_blank" class="demo-report-link" style="display: inline-block; margin-top: 8px; color: var(--line-green); font-weight: 700; text-decoration: underline;">🔗 點此開啟線上真實生成之「HTML 尊榮智庫報表」範例</a>
               </div>
-              <!-- Screenshot Image 5: 666 Command Live Result -->
+              <!-- Screenshot Image: Report Page -->
               <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                <img src="./assets/line_666_screenshot.png" alt="666 HTML報表生成實體範例截圖" class="screenshot-img">
-                <div class="screenshot-caption">📷 輸入「666 公司重點服務項目」自動產生網頁版報表連結</div>
+                <img src="./assets/line_report_page_screenshot.png" alt="HTML報表網頁實體範例截圖" class="screenshot-img">
+                <div class="screenshot-caption">📷 真實生成的「FALO AI 尊榮 HTML 智慧型報表」網頁版，支援一鍵複製與匯出 PDF</div>
               </div>
             </div>
 
-            <div class="command-item">
-              <div class="cmd-top">
-                <span class="cmd-code">991 [主題]</span>
-                <span class="cmd-name">極速微簡報 (約 150~200 字極簡卡片)</span>
-              </div>
-              <div class="cmd-desc">
-                <b>作用：</b>極速調研網路最新訊息，生成 150~200 字極簡精華重點，適合在手機端迅速掌握快訊。
-              </div>
-              <!-- Screenshot Image 6: 991 Command Live Result -->
-              <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                <img src="./assets/line_991_screenshot.png" alt="991 極速微簡報實體範例截圖" class="screenshot-img">
-                <div class="screenshot-caption">📷 輸入「991 gemini 3.6」快速生成極速微簡報</div>
-              </div>
-            </div>
-
-            <div class="command-item">
-              <div class="cmd-top">
-                <span class="cmd-code">992 [主題]</span>
-                <span class="cmd-name">預設標準簡報 (約 400~500 字)</span>
-              </div>
-              <div class="cmd-desc">
-                <b>作用：</b>即時向全球外網進行 Google 搜尋與新聞綜整，輸出 400~500 字結構清晰的中篇重點摘要簡報。
-              </div>
-              <!-- Screenshot Image 7: 992 Command Live Result -->
-              <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                <img src="./assets/line_992_screenshot.png" alt="992 預設標準簡報實體範例截圖" class="screenshot-img">
-                <div class="screenshot-caption">📷 輸入「992 gemini 3.6」生成預設標準簡報</div>
-              </div>
-            </div>
-
-            <div class="command-item">
-              <div class="cmd-top">
-                <span class="cmd-code">999 [主題]</span>
-                <span class="cmd-name">深度智庫研報 (約 800~1,200 字長篇分析)</span>
-              </div>
-              <div class="cmd-desc">
-                <b>作用：</b>執行深度聯網情報調研，產出 800~1,200 字包含背景脈絡、觀點、數據與結論的完整產業與主題分析長文。
-                <br>
-                <a href="https://line-ai.formosa-ai.com/report/rpt_999_1784810717260_aihk" target="_blank" class="demo-report-link" style="display: inline-block; margin-top: 8px; color: var(--line-green); font-weight: 700; text-decoration: underline;">🔗 點此開啟線上真實生成之「HTML 深度研報網頁」範例</a>
-              </div>
-              <!-- Screenshot Image 8: 999 Command Live Result -->
-              <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                <img src="./assets/line_999_screenshot.png" alt="999 深度智庫研報實體範例截圖" class="screenshot-img">
-                <div class="screenshot-caption">📷 輸入「999 gemini 3.6」生成深度智庫研報與網頁連結</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Group 4: 全能佇列任務 (888) -->
-        <div class="command-group-card" style="border-left: 4px solid var(--line-green);">
-          <div class="group-header">
-            <span style="font-size: 1.3rem;">📥</span>
-            <div class="group-title">【異步佇列任務池：888 全能控制】</div>
-            <div class="group-subtitle">查詢與領取高耗時背景任務的結果</div>
-          </div>
-          <div class="command-list">
-            <div class="command-item">
-              <div class="cmd-top">
-                <span class="cmd-code">888 [編號]</span>
-                <span class="cmd-name">全能任務佇列池 (圖片/語音/666智庫/99x研報)</span>
-              </div>
-              <div class="cmd-desc">
-                <b>作用：</b>將耗時的圖片 OCR、語音 Whisper 轉錄或巨型研報任務丟入異步 Queue 佇列中執行，避免 LINE 觸發 5 秒 HTTP 超時。
-              </div>
-              
-              <!-- Screenshot Image 13: 888 Command Live Result -->
-              <div class="screenshot-img-wrapper" style="margin-top: 16px;">
-                <img src="./assets/line_888_screenshot.png" alt="888 全能任務佇列池實體範例截圖" class="screenshot-img">
-                <div class="screenshot-caption">📷 輸入「888」呼叫異步處理佇列池，查看圖片/研報等高耗時背景任務的即時進度</div>
-              </div>
-
-              <!-- Screenshot Image 14: 888 1 Result Retrieval Live Result -->
-              <div class="screenshot-img-wrapper" style="margin-top: 16px; margin-bottom: 0;">
-                <img src="./assets/line_888_result_screenshot.png" alt="888 任務領取實體範例截圖" class="screenshot-img">
-                <div class="screenshot-caption">📷 輸入「888 1」領取該筆任務成果（OCR 圖片內容大意與 RWD 專屬網頁網址）</div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -1120,6 +1145,24 @@
       }).catch(err => {
         console.error("複製失敗", err);
       });
+    }
+
+    // Toggle Collapsible Screenshots
+    function toggleScreenshot(btn) {
+      const collapsible = btn.nextElementSibling;
+      if (collapsible.style.display === "none" || collapsible.style.display === "") {
+        collapsible.style.display = "block";
+        btn.innerHTML = `📷 收起實測對話截圖 (▲)`;
+        btn.style.borderColor = "var(--line-green)";
+        btn.style.color = "var(--line-green-hover)";
+        btn.style.background = "var(--line-green-light)";
+      } else {
+        collapsible.style.display = "none";
+        btn.innerHTML = `📷 展開實測對話截圖 (▼)`;
+        btn.style.borderColor = "var(--border-color)";
+        btn.style.color = "var(--text-muted)";
+        btn.style.background = "#ffffff";
+      }
     }
 
     // Scroll Spy & Menu Auto-Highlight
