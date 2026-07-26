@@ -675,21 +675,25 @@
 
     <!-- Menu Navigation -->
     <nav class="sidebar-menu">
-      <div class="menu-group-label">主要章節</div>
+      <div class="menu-group-label">產品核心理念</div>
       
-      <!-- Topic 1 Active -->
-      <a class="menu-item active" href="#ai-linebot" id="nav-linebot">
+      <a class="menu-item active" href="#ai-concept" id="nav-concept">
+        <span class="menu-icon">🏠</span>
+        <span>FALO × NotebookLM 觀念</span>
+      </a>
+
+      <div class="menu-group-label" style="margin-top: 16px;">主要章節</div>
+      
+      <a class="menu-item" href="#ai-linebot" id="nav-linebot">
         <span class="menu-icon">🤖</span>
         <span>FALO AI LineBot 指令與自然語言</span>
       </a>
 
-      <!-- Topic 2 Active -->
       <a class="menu-item" href="#ai-multimodal" id="nav-multimodal">
         <span class="menu-icon">👁️</span>
         <span>AI多模態：視覺、語音、報表</span>
       </a>
 
-      <!-- Future Topics Placeholders -->
       <div class="menu-group-label" style="margin-top: 16px;">延伸主題（預留）</div>
       
       <a class="menu-item" href="#ai-km" id="nav-km">
@@ -716,13 +720,87 @@
       <div class="breadcrumb">
         <a href="#">產品介紹</a>
         <span>/</span>
-        <span>FALO AI LineBot</span>
+        <span id="breadcrumb-current">FALO AI KM × NotebookLM</span>
       </div>
 
       <button class="copy-url-btn" onclick="copyDomain()">
         🌐 複製網址: line-bot-km.formosa-ai.com
       </button>
     </header>
+
+    <!-- Introduction Section: FALO AI KM x NotebookLM Concept -->
+    <section id="ai-concept" class="topic-section">
+      <span class="topic-badge">觀念說明</span>
+      <h1 class="topic-title">FALO AI KM × NotebookLM</h1>
+      <p class="topic-lead">
+        整合各家 AI 大廠前沿技術！善用已成熟平台，專注自身核心價值，協同合作創造最大效益。
+      </p>
+
+      <!-- Concept Core Box -->
+      <div class="concept-box" style="border-left-color: var(--line-green);">
+        <div class="concept-box-title">
+          <span>📌</span> 核心觀念：我們不重新發明輪子，我們讓輪子更好用
+        </div>
+        <div class="concept-box-desc" style="font-size: 0.95rem; line-height: 1.7;">
+          很多人常誤以為建立企業 AI 知識庫（KM），必須從頭到尾重新開發一套複雜的聊天與研究系統。
+          <br><br>
+          其實並非如此。<b>Google NotebookLM</b> 已經是一套極其成熟、強大的 AI 知識探索與整理工具。FALO AI KM 的核心價值，<b>從來就不是取代它，而是善用它、賦能它</b>。
+          <br><br>
+          FALO AI KM 的價值，在於協助企業更有效率地管理與運用 NotebookLM，而不是重複開發 NotebookLM 已具備的能力。
+        </div>
+      </div>
+
+      <!-- Conceptual Diagram Container -->
+      <div class="command-details-container" style="margin-top: 24px;">
+        <div class="command-group-card" style="border-left: 4px solid var(--line-green);">
+          <div class="group-header">
+            <span style="font-size: 1.3rem;">🖼️</span>
+            <div class="group-title">【協同運作：FALO AI KM × NotebookLM 全景架構】</div>
+            <div class="group-subtitle">點擊下方架構圖可放大並下載</div>
+          </div>
+          
+          <div style="padding: 24px;">
+            <div class="screenshot-img-wrapper" style="margin: 0; padding: 16px; background: #ffffff;">
+              <img src="./assets/falo_notebooklm_concept.png" alt="FALO AI KM x NotebookLM 協同運作全景架構圖" class="screenshot-img">
+              <div class="screenshot-caption">📷 FALO AI KM × NotebookLM 協同運作全景架構圖：LINE 是入口，AI KM 是大腦，NotebookLM 是深度研究與創作</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Division of Labor Card -->
+        <div class="command-group-card" style="border-left: 4px solid var(--line-green); margin-top: 24px;">
+          <div class="group-header">
+            <span style="font-size: 1.3rem;">🤝</span>
+            <div class="group-title">【定位與分工：完美的互補關係，而非競爭】</div>
+            <div class="group-subtitle">降低企業導入門檻，讓日常工作真正融入 AI</div>
+          </div>
+          <div class="command-list" style="padding: 24px; gap: 24px; display: flex; flex-direction: column;">
+            <div style="line-height: 1.7; font-size: 0.95rem; color: var(--text-main);">
+              <h4 style="color: var(--line-green); font-size: 1.1rem; margin-bottom: 8px; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+                <span>📘</span> NotebookLM ── 您的知識研究與創作中心
+              </h4>
+              <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-main); margin-bottom: 16px;">
+                <li><b>擅長領域</b>：跨文件深度閱讀、研究分析、自動生成語音摘要（Audio Overview）、一鍵產出簡報與圖表。</li>
+                <li><b>核心價值</b>：使用者平常仍然可以直接在 NotebookLM 中與 AI 對話，享受 Google 持續升級帶來的先進能力。</li>
+              </ul>
+              
+              <h4 style="color: var(--line-green); font-size: 1.1rem; margin-bottom: 8px; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+                <span>🟢</span> FALO AI KM ── 您的知識管理與整合入口
+              </h4>
+              <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-main);">
+                <li><b>擅長領域</b>：串接 LINE 聊天室（支援文字、圖片、語音、檔案多模態輸入）、即時動態教導新知識、自動生成安全的 <code>FALO Knowledge Source</code> 專屬連結。</li>
+                <li><b>核心價值</b>：負責協助企業管理與整合知識，降低企業使用 NotebookLM 的門檻，而不是重新打造一套新的 NotebookLM。</li>
+              </ul>
+            </div>
+
+            <div style="background: var(--line-green-light); border: 1px solid var(--border-highlight); padding: 16px; border-radius: var(--radius-md); font-size: 0.92rem; color: var(--text-main); line-height: 1.6;">
+              <span style="font-weight: 800; color: var(--line-green); display: block; margin-bottom: 6px;">💡 AI 時代的企業核心思維：</span>
+              在 AI 時代，不一定每一項能力都需要自行開發。真正重要的是如何整合成熟工具，讓使用者以最簡單的方式獲得最大的價值。善用成熟平台、專注自身核心價值，往往比重新開發更有效率，也更具有長期競爭力。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Main Topic Section: FALO AI LineBot -->
     <section id="ai-linebot" class="topic-section">
@@ -1193,15 +1271,15 @@
           <div class="group-header">
             <span style="font-size: 1.3rem;">🧠</span>
             <div class="group-title">【FALO AI KM 企業智慧知識庫】</div>
-            <div class="group-subtitle">超大上下文 Caching 技術與官方導航</div>
+            <div class="group-subtitle">先進的智慧資料庫技術（向量、快取）與官方導航</div>
           </div>
           
           <div style="padding: 24px;">
             <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.7; margin-bottom: 20px; font-weight: 700; border-left: 3px solid var(--line-green); padding-left: 12px;">
-              結合 Gemini 的 Context Caching 技術，我們為企業建立了毫秒級檢索的智慧知識庫系統。海量 SOP、合約、規章與專案時程，大腦皆能秒級讀取並精準回答。
+              基於先進的智慧資料庫技術（向量、快取），我們為企業建立了毫秒級檢索的智慧知識庫系統。海量 SOP、合約、規章與專案時程，大腦皆能秒級讀取並精準回答。
             </p>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
-              FALO AI KM 結合了先進的 <b>Context Caching（上下文快取）</b> 功能，在與大語言模型對話時，不需要每次都重複讀取整份數十萬字的企業 SOP。快取技術能將重複資料長駐於 Google 邊緣，不僅大幅縮減 90% 的 API Token 消耗，更將問答的回應延遲降至極致，提供近乎零秒延遲的流暢體驗。
+              FALO AI KM 深度整合了先進的<b>「向量語意檢索」</b>與<b>「上下文快取」</b>技術。在面對海量企業文件時，先透過<b>向量資料庫</b>精確定位關聯章節，再搭配<b>快取技術</b>將常用背景知識長駐於雲端邊緣，不僅大幅縮減 90% 的 API Token 消耗，更將回應延遲降至極致，提供毫秒級的極速智慧對答體驗。
             </p>
             
             <div style="margin-top: 16px; margin-bottom: 24px;">
@@ -1258,6 +1336,8 @@
       const sections = document.querySelectorAll('.topic-section');
       const navItems = document.querySelectorAll('.sidebar-menu .menu-item');
 
+      const breadcrumbCurrent = document.getElementById('breadcrumb-current');
+
       function changeActiveMenu() {
         let index = sections.length;
         
@@ -1266,6 +1346,12 @@
         navItems.forEach((item) => item.classList.remove('active'));
         if (navItems[index]) {
           navItems[index].classList.add('active');
+          if (breadcrumbCurrent) {
+            const titleElem = sections[index].querySelector('.topic-title');
+            if (titleElem) {
+              breadcrumbCurrent.textContent = titleElem.textContent.trim();
+            }
+          }
         }
       }
 
